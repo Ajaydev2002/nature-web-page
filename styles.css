@@ -4,8 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    align-items: center;
-    max-width: 1500px
+    max-width: 1500px;
 }
 
 :root {
@@ -42,7 +41,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    margin-inline: 30px;
+    margin-inline: 10px;
 }
 .navlist {
     display: flex;
@@ -210,12 +209,16 @@ nav {
     padding: 40px 70px;
     justify-content: space-between;
     align-items: center;
+    margin-inline: 60px;
 }
 .footerlinks {
     display: flex;
     align-items: center;
     gap: 16px;
     list-style: none;
+}
+.footerlinks a {
+    color: var(--primary);
 }
 
 @media screen and (max-width:520px) {
