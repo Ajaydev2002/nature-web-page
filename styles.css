@@ -209,7 +209,7 @@ nav {
     padding: 40px 70px;
     justify-content: space-between;
     align-items: center;
-    margin-inline: 60px;
+    margin-inline: 20px;
 }
 .footerlinks {
     display: flex;
