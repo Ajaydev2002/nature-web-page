@@ -75,6 +75,7 @@ nav {
     border: none;
     background-color: var(--secondary);
     color: var(--primary);
+    font-weight: bold;
 }
 
 .main-content {
