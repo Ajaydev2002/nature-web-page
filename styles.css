@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1500px;
 }
 
 :root {
@@ -17,12 +16,20 @@ body {
     color: var(--primary);
 }
 
+.main_container{
+    width: 100%;
+    max-width: 1530px;
+    margin: auto;
+}
+
 #main {
     background-image: url(./images/new\ background\ image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     position: relative;
+    max-width: 1530px;
+    margin: auto;
 }
 
 a {
@@ -50,7 +57,7 @@ nav {
     align-items: center;
 }
 .navlist a {
-    color: white;
+    color: #ffffff;
 }
 .btn {
     padding: 11px 20px;
@@ -76,34 +83,36 @@ nav {
     align-items: center;
     justify-content: center;
     color: rgb(80, 75, 75);
+    margin-block: 60px;
 }
 .main-content .intro-heading {
     font-size: 50px;
-    color: #efefef;
+    color: #ffffff;
 }
 .main-content .main-heading {
     font-size: 110px;
     margin-top: -20px;
-    color: #efefef;
+    color: #ffffff;
 }
 .main-content p {
     max-width: 250px;
     margin-bottom: 10px;
-    color: #efefef;
+    color: #ffffff;
 }
 .menu-btn {
     position: absolute;
     top: 40px;
     right: 20px;
     display: none;
+    color: var(--white);
 }
 
 .section-title h1 {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
 }
 .section-title .line {
-    width: 100px;
+    width: 150px;
     height: 4px;
     border: 10px;
     background-color: var(--secondary);
@@ -114,23 +123,30 @@ nav {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 40px;
     flex-wrap: wrap;
 
 }
 .service {
     width: 250px;
     gap: 16px;
+    font-size: 25px;
+}
+.service p {
+    font-size: medium;
 }
 .service img {
     max-width: 100%;
     border-radius: 5px;
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.services h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 .service img:hover {
-    transform: scale(1.2);
-
+    transform: scale(1.05);
 }
 
 #testimonial {
@@ -140,13 +156,13 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
-    gap: 30px;
+    max-width: 800px;
+    gap: 16px;
     padding: 50px 16px;
 }
-#testimonial h1 {
+#testimonial h2 {
 
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'forum', sans-serif;
     text-align: center;
 }
@@ -161,22 +177,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 120px;
-    padding-inline: 60px;
+    gap: 100px;
 }
 #about-us .container .about-content {
-    max-width: 900px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: start;
 }
-#about-us .container .about-content {
-    font-family: 'forum', sans-serif;
-    font-size: 20px;
+#about-us .container .about-content h2 {
+    font-size: 40px;
 }
 .about-content p {
-    font-size: 16px;
+    font-size: medium;
 }
 
 #questions {
@@ -199,6 +213,7 @@ nav {
 }
 #questions .container p {
     text-align: center;
+    font-size: medium;
 }
 .footer_container{
     margin-top: -70px;
@@ -258,10 +273,51 @@ nav {
     .btn-secondary {
         margin: 10px;
     }
-    #abut-us ,.container {
-        max-width: fit-content;
+    #main .main-content .intro-heading{
+        font-size: 25px;
+    }
+    #main .main-content .main-heading {
+        font-size: 60px;
+        padding-top: 10px;
+    }
+    #main .main-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #services .section-title h1 {
+        font-size: 35px;
+    }
+    .service h3 {
+        font-size: 20px;
+    }
+    .service p {
+        font-size: 18px;
+    }
+
+    #testimonial .container h2 {
+        font-size: 25px;
+    }
+
+    #about-us .container .about-content h2 {
+        font-size: 25px;
+    }
+    .about-content p {
+        font-size: 18px;
+    }
+    #about-us .container {
         flex-direction: column;
         gap: 30px;
+    }
+    #about-us .btn-primary {
+        align-self: center;
+    }
+
+    #questions .container h1 {
+        font-size: 35px;
+    }
+    #questions .container p {
+        font-size: 18px;
     }
     .footer_container {
         flex-direction: column;
@@ -271,5 +327,3 @@ nav {
         text-align: center;
     }
 }
-
-
