@@ -50,7 +50,7 @@ nav {
     align-items: center;
 }
 .navlist a {
-    color: var(--white);
+    color: white;
 }
 .btn {
     padding: 11px 20px;
