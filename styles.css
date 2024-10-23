@@ -58,6 +58,10 @@ nav {
 }
 .navlist a {
     color: #ffffff;
+    font-weight: bold;
+} 
+.navlist a:hover {
+    color: yellow
 }
 .btn {
     padding: 11px 20px;
@@ -70,6 +74,9 @@ nav {
     border:1px solid var(--white);
     color: var(--white);
     font-weight: bold;
+}
+.btn-secondary:hover {
+    color: yellow;
 }
 .btn-primary {
     border: none;
@@ -242,6 +249,7 @@ nav {
 @media screen and (max-width:520px) {
     .menu-btn {
         display: block;
+        position: fixed;
     }
     .navlist {
         display: none;
@@ -259,13 +267,15 @@ nav {
         display: block;
         flex-direction: column;
         background: gray;
-        position: absolute;
+        position: fixed;
         top: 0;
         right:0px;
-        width: 60%;
+        width: 100%;
         height: 110vh;
         padding-top: 80px;
         transition: all 0.3s ease;
+        text-align: center;
+        margin: auto;
     }
     .navlist li:not(:last-child) {
         text-align: left;
